@@ -1,2 +1,42 @@
 # snake-arduino
 Recreating the classic game "Snake" on the Arduino Mega.
+
+## Game Description and Rules:
+This an adaptation of the classic Snake game. The player will control the
+direction of a continuously moving snake. One “item”  will appear on the
+screen at any given time, and the player will gain points by “consuming”
+items with the snake. When an item is consumed, another one will appear
+somewhere else on the screen. However, every time an item is consumed, the
+snake grows in length thus increasing the difficulty. The player loses if
+the snake touches the boundary of the screen or if the head of the snake
+comes in contact with the rest of its body.
+
+## Accessories:
+- Arduino Mega
+- Adafruit ILI9341 LCD Display
+- Joystick
+
+## Wiring Instructions:
+### Display:
+- GND <-> GND  
+- Vin <-> +5V  
+- CLK <-> 52  
+- MISO <-> 50  
+- MOSI <-> 51  
+- CS <-> 10  
+- D/C <-> 9  
+- Y+ <-> A2 (analog pin)  
+- X+ <-> 4  (digital pin)  
+- Y- <-> 5  (digital pin)  
+- X- <-> A3 (analog pin)  
+- CCS <-> 6  
+### Joystick:
+- GND <-> GND  
+- 5V <-> 5V  
+- VRX <-> A1 (analog pin)  
+- VRY <-> A0 (analog pin)  
+- SW <-> 2 (digial pin)  
+
+## Instructions to run code:
+1. Compile snake.cpp with Makefile using "make" command
+2. Upload to Arduino using "make upload" command
